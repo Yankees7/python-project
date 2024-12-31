@@ -1,0 +1,24 @@
+#windows
+cd packages
+
+
+
+
+7z x SmartKit_22.0.0.12.zip
+rename SmartKit_22.0.0.12.exe SmartKit.exe
+
+7z x SmartKit_22.0.0.12_zh.zip
+rename SmartKit_22.0.0.12_zh.exe SmartKit_zh.exe
+
+copy SmartKit*.exe 
+
+
+#linux
+
+mv or rename命令用字符串替换的方式批量改变文件名
+
+
+语法格式： rename 旧文件名 新文件名 旧文件名模糊匹配（支持通配符*或?）
+单个文件：
+将main1.c重命名为main.c
+rename main1.c main.c main1.c

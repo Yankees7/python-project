@@ -1,0 +1,176 @@
+{
+    "redhat.telemetry.enabled": true,
+    "git.path": "D:\\tools\\Git\\cmd\\git.exe",
+    "terminal.integrated.profiles.windows": {
+        "PowerShell": {
+            "source": "PowerShell",
+            "icon": "terminal-powershell"
+        },
+        "Command Prompt": {
+            "path": [
+                "${env:windir}\\Sysnative\\cmd.exe",
+                "${env:windir}\\System32\\cmd.exe"
+            ],
+            "args": [],
+            "icon": "terminal-cmd"
+        },
+        "git Bash": {
+            "path": "D:\\tools\\Git\\bin\\bash.exe", //这里是的的bash路径
+        }
+    },
+    "python.analysis.extraPaths": [
+        "C:\\Users\\22835\\AppData\\Local\\Programs\\Python\\Python39\\Lib\\site-packages"
+    ],
+    "git.autofetch": true,
+    "editor.formatOnSave": true,
+    "python.linting.flake8Enabled": true,
+    "python.formatting.provider": "yapf",
+    "python.formatting.yapfArgs": [
+        "--style={based_on_style: pep8,indent_width:4,column_limit: 120}",
+    ],
+    "python.linting.flake8Args": [
+        "--max-line-length=248"
+    ],
+    "python.linting.pylintEnabled": false,
+    "workbench.iconTheme": "Monokai Pro (Filter Spectrum) Icons",
+    "[python]": {
+        "editor.formatOnType": true
+    },
+    "git.confirmSync": false,
+    "workbench.colorTheme": "Visual Studio Dark",
+    "vim.easymotion": true,
+    "vim.surround": true,
+    "vim.incsearch": true,
+    "vim.useSystemClipboard": true,
+    "vim.useCtrlKeys": true,
+    "vim.hlsearch": true,
+    "vim.insertModeKeyBindings": [
+        {
+            "before": [
+                "j",
+                "j"
+            ],
+            "after": [
+                "<Esc>"
+            ]
+        }
+    ],
+    "vim.normalModeKeyBindingsNonRecursive": [
+        // 到行首^映射为H，到行尾$映射为L
+        {
+            "before": [
+                "H"
+            ],
+            "after": [
+                "^"
+            ]
+        },
+        {
+            "before": [
+                "L"
+            ],
+            "after": [
+                "$"
+            ]
+        },
+        //easymotion快速跳转映射，s+<char>
+        {
+            "before": [
+                "<leader>",
+                "s"
+            ],
+            "after": [
+                "<leader>",
+                "<leader>",
+                "s"
+            ]
+        },
+        // leader+u/d 代替ctrl+u/d 使页面上下翻滚半屏
+        {
+            "before": [
+                "<leader>",
+                "u"
+            ],
+            "after": [
+                "<C-u>"
+            ]
+        },
+        {
+            "before": [
+                "<leader>",
+                "d"
+            ],
+            "after": [
+                "<C-d>"
+            ]
+        },
+        // 删除到行首行尾 暂时只能用leader +H/L, 若dH/L会删除此处到代码开头
+        {
+            "before": [
+                "<leader>",
+                "H"
+            ],
+            "after": [
+                "d",
+                "^"
+            ]
+        },
+        {
+            "before": [
+                "<leader>",
+                "L"
+            ],
+            "after": [
+                "d",
+                "$"
+            ]
+        },
+        // tab相关
+        {
+            "before": [
+                "t",
+                "h"
+            ],
+            "commands": [
+                ":tabp"
+            ]
+        },
+        {
+            "before": [
+                "t",
+                "l"
+            ],
+            "commands": [
+                ":tabn"
+            ]
+        },
+        // 从 editor 跳转到 terminal
+        {
+            "before": [
+                "<leader>",
+                "t"
+            ],
+            "commands": [
+                "workbench.action.terminal.focus"
+            ]
+        }
+    ],
+    "vim.visualModeKeyBindingsNonRecursive": [
+        {
+            "before": [
+                "H"
+            ],
+            "after": [
+                "^"
+            ]
+        },
+        {
+            "before": [
+                "L"
+            ],
+            "after": [
+                "$"
+            ]
+        }
+    ]
+}
